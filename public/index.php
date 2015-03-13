@@ -41,7 +41,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
- 
+
 
   <?php /* CMG advertising and analytics */ ?>
   <!-- ?php include "includes/advertising.inc"; ? -->
@@ -50,7 +50,7 @@
 </head>
 <body>
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -65,50 +65,50 @@
         </a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="visible-xs small-social"><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
+      <ul class="nav navbar-nav navbar-right social hidden-xs">
+        <li><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
       </ul>
-        <ul class="nav navbar-nav navbar-right social hidden-xs">
-          <li><a target="_blank" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode($meta['url']); ?>&via=<?php print urlencode($meta['twitter']); ?>&text=<?php print urlencode($meta['title']); ?>"><i class="fa fa-twitter"></i></a></li>
-          <li><a target="_blank" href="https://plus.google.com/share?url=<?php echo urlencode($meta['url']); ?>"><i class="fa fa-google-plus"></i></a></li>
-        </ul>
     </div>
   </div>
 </nav>
-<div id="back">
 
-  <div class="container">
+  <article class="container">
     <div class="row">
-      <div class="col-lg-12 header">
-      <h1 id="pagetitle">Title</h1>
-      <p>text</p>
-
-        <div id="map"></div>
-
+      <div class="col-xs-12 header">
+        <h1>Title</h1>
+        <p class="author">By Christian McDonald and Andrew Chavez</p>
+        <p>text</p>
       </div>
-    </div>
 
+      <div class="col-md-9 col-sm-8 col-xs-12">
+        <div id="map"></div>
+      </div>
 
-  </div>
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="list-group">
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">2015 <i class="fa fa-check-square-o pull-right"></i></h4>
+            <p class="list-group-item-text">Describe the nuance of 2015 data here.</p>
+          </a>
+          <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">2014 <i class="fa fa-check-square-o pull-right"></i></h4>
+            <p class="list-group-item-text">And how the 2014 data differs here, maybe with a summary.</p>
+          </a>
+        </div>
+      </div>
+  </article>
 
-    <!-- bottom matter -->
-    <!-- ?php include "includes/banner-ad.inc";? -->
-    <?php include "includes/legal.inc";?>
-    <!-- ?php include "includes/project-metrics.inc"; ? -->
-    <!-- ?php include "includes/metrics.inc"; ? -->
+  <!-- bottom matter -->
+  <!-- ?php include "includes/banner-ad.inc";? -->
+  <?php include "includes/legal.inc";?>
+  <!-- ?php include "includes/project-metrics.inc"; ? -->
+  <!-- ?php include "includes/metrics.inc"; ? -->
 
-    <!-- ?php include "includes/metrics.inc"; ? -->
+  <!-- ?php include "includes/metrics.inc"; ? -->
 
-    <script src="dist/scripts.js"></script>
-
-    <script>
-
-    </script>
-
-</div>
+  <script src="dist/scripts.js"></script>
 
   <?php if($_SERVER['SERVER_NAME'] === 'localhost'): ?>
     <script src="//localhost:35729/livereload.js"></script>

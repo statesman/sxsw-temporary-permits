@@ -25,7 +25,7 @@ var grouped = _.groupBy(mapdata, function(evt){
 
 function makeMarker(evt){
 	return L.marker([evt.Latitude, evt.Longitude],{
-		icon: icons[evt.Year] 
+		icon: icons[evt.Year]
 	});
 }
 
@@ -33,10 +33,7 @@ var markers2014 = _.map(grouped[2014], makeMarker);
 
 var markers2015 = _.map(grouped[2015], makeMarker);
 
-var layer2014 = L.layerGroup(markers2014)
-    .addTo(map);
-
-
-
-var layer2015 = L.layerGroup(markers2015)
-    .addTo(map);
+var layers = {
+  2014: L.layerGroup(markers2014).addTo(map),
+  2015: L.layerGroup(markers2015).addTo(map)
+};
