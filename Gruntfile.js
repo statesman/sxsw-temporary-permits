@@ -11,6 +11,12 @@ module.exports = function(grunt) {
         dest: 'public/fonts/',
         flatten: true,
         expand: true
+      },
+      leafimages: {
+        src: 'bower_components/leaflet/dist/images/**',
+        dest: 'public/images/',
+        flatten: true,
+        expand: true
       }
     },
 
@@ -51,6 +57,8 @@ module.exports = function(grunt) {
             'bower_components/bootstrap/js/collapse.js',
             'bower_components/bootstrap/js/dropdown.js',
             'bower_components/bootstrap/js/transition.js',
+            'bower_components/underscore/underscore.js',
+            'bower_components/leaflet/dist/leaflet.js',
             'src/js/main.js',
             'src/js/events.js',
             'src/js/map.js'

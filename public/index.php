@@ -41,14 +41,11 @@
   <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
-
-  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
  
 
   <?php /* CMG advertising and analytics */ ?>
-  <?php include "includes/advertising.inc"; ?>
-  <?php include "includes/metrics-head.inc"; ?>
+  <!-- ?php include "includes/advertising.inc"; ? -->
+  <!-- ?php include "includes/metrics-head.inc"; ? -->
 
 </head>
 <body>
@@ -87,6 +84,7 @@
     <div class="row">
       <div class="col-lg-12 header">
       <h1 id="pagetitle">Title</h1>
+      <p>text</p>
 
         <div id="map"></div>
 
@@ -99,10 +97,10 @@
     <!-- bottom matter -->
     <!-- ?php include "includes/banner-ad.inc";? -->
     <?php include "includes/legal.inc";?>
-    <?php include "includes/project-metrics.inc"; ?>
-    <?php include "includes/metrics.inc"; ?>
+    <!-- ?php include "includes/project-metrics.inc"; ? -->
+    <!-- ?php include "includes/metrics.inc"; ? -->
 
-    <?php include "includes/metrics.inc"; ?>
+    <!-- ?php include "includes/metrics.inc"; ? -->
 
     <script src="dist/scripts.js"></script>
 
