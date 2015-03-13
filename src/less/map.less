@@ -2,7 +2,20 @@
 @2015-color: rgb(43,131,186);
 
 #map {
-    height: 550px;
+  height: 550px;
+
+  .leaflet-popup-content {
+    font-family: @font-family-sans-serif;
+    p {
+      margin-top: 0;
+      margin-bottom: 3px;
+      font-size: 12px;
+
+      strong {
+        font-size: 13px;
+      }
+    }
+  }
 }
 
 .event-marker {

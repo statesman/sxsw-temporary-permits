@@ -28,10 +28,19 @@ var grouped = _.groupBy(mapdata, function(evt){
 	return evt.Year;
 });
 
+function popupContent(evt) {
+  return '<p><strong>' + evt.EventVenueName + '</strong></p>' +
+    '<p>' + evt.Address + '</p>' +
+    '<p>' + evt.StartDate + ' to ' + evt.EndDate + '</p>';
+}
+
 function makeMarker(evt){
-	return L.marker([evt.Latitude, evt.Longitude],{
-		icon: icons[evt.Year]
+	var m = L.marker([evt.Latitude, evt.Longitude],{
+		icon: icons[evt.Year],
+    riseOnHover: true
 	});
+  m.bindPopup(popupContent(evt));
+  return m;
 }
 
 var markers2014 = _.map(grouped[2014], makeMarker);
