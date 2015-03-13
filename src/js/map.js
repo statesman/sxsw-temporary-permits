@@ -6,7 +6,7 @@ var map = L.map('map', {
   center: [30.26614700786203,-97.73987889289856],
   zoom: 16,
   minZoom: 12,
-  maxZoom: 17
+  maxZoom: 18
 });
 
 map.addLayer(layer);
@@ -43,26 +43,28 @@ function makeMarker(evt){
   return m;
 }
 
-var markers2014 = _.map(grouped[2014], makeMarker);
-var markers2015 = _.map(grouped[2015], makeMarker);
-
-var layers = {
-  2014: L.layerGroup(markers2014).addTo(map),
-  2015: L.layerGroup(markers2015).addTo(map)
+var markers = {
+  2014: _.map(grouped[2014], makeMarker),
+  2015: _.map(grouped[2015], makeMarker)
 };
+
+var group = new L.MarkerClusterGroup({
+  showCoverageOnHover: false,
+  disableClusteringAtZoom: map.options.maxZoom
+});
+group.addLayers(markers[2014]).addTo(map);
+group.addLayers(markers[2015]).addTo(map);
 
 function setLayers() {
   var years = $('#year-toggle').find('a').toArray();
 
-  _.each(years, function(el) {
-    var $el = $(el),
-        markerLayer = layers[$el.data('year')];
+  group.clearLayers();
 
-    if($el.hasClass('selected') && !map.hasLayer(markerLayer)) {
-      map.addLayer(markerLayer);
-    }
-    else if (!$el.hasClass('selected') && map.hasLayer(markerLayer)) {
-      map.removeLayer(markerLayer);
+  _.each(years, function(el) {
+    var $el = $(el);
+
+    if($el.hasClass('selected')) {
+      group.addLayers(markers[$el.data('year')]);
     }
   });
 }

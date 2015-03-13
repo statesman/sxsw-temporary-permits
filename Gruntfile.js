@@ -59,6 +59,7 @@ module.exports = function(grunt) {
             'bower_components/bootstrap/js/transition.js',
             'bower_components/underscore/underscore.js',
             'bower_components/leaflet/dist/leaflet.js',
+            'bower_components/leaflet.markercluster/dist/leaflet.markercluster.js',
             'src/js/main.js',
             'src/js/events.js',
             'src/js/map.js'
