@@ -3,8 +3,8 @@ var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.
 });
 
 var map = L.map('map', {
-  center: [30.26614700786203,-97.73987889289856],
-  zoom: 16,
+  center: [30.264071306509358,-97.74001836776733],
+  zoom: 15,
   minZoom: 12,
   maxZoom: 17
 });
@@ -13,12 +13,12 @@ map.addLayer(layer);
 
 var icons = {
 	2014: L.divIcon({
-		html: '<i class="fa fa-map-marker event-2014"></i>',
+		html: '<i class="fa fa-circle event-2014"></i>',
 		className: 'event-marker',
 		iconSize: L.point(12,12)
 	}),
 	2015: L.divIcon({
-		html: '<i class="fa fa-map-marker event-2015"></i>',
+		html: '<i class="fa fa-square event-2015"></i>',
 		className: 'event-marker',
 		iconSize: L.point(12,12)
 	})

@@ -19,8 +19,9 @@
 }
 
 .event-marker {
-  font-size: 25px;
-  text-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+  font-size: 13px;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+  opacity: .75;
 
   .event-2014 {
       color: @2014-color;
@@ -31,18 +32,29 @@
 }
 
 #year-toggle {
+  .fa {
+    margin-right: 5px;
+  }
   .year-2014 {
-    .fa-circle{
+    .fa {
       color: @2014-color;
     }
   }
   .year-2015 {
-    .fa-circle {
+    .fa {
       color: @2015-color;
     }
   }
 
+  .list-group-item:first-child .list-group-item-heading {
+    margin-bottom: 0;
+    font-family: @font-family-sans-serif;
+    font-size: 14px;
+  }
+
   .list-group-item-heading {
+    margin-top: 4px;
+    margin-bottom: 8px;
     i.status-icon:after {
       .fa-icon();
       content: @fa-var-square-o;

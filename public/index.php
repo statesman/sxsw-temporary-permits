@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <?php
   $meta = array(
-    "title" => "2015 Statesman Social Media Awards | Statesman.com",
-    "description" => "The Austin American-Statesman is honoring the best in social media in Central Texas. Use our online nomination form to nominate your favorite person, company or group for a Statesman Social Media Award.",
-    "thumbnail" => "http://projects.statesman.com/then-and-now/paramount/assets/share.png", // needs update
+    "title" => "Comparing two years of SXSW side-party permits",
+    "description" => "The City of Austin has studied the proliferation of South by Southwest side parties as part of a bigger examination of SXSW safety after the tragic car crash during last year’s SXSW festival that killed four people. And, seperately, a study by SXSW suggested re-evaluating how many pop-up events were allowed during the week of the festival.",
+    "thumbnail" => "http://projects.statesman.com/news/sxsw-temporary-permits/assets/share.png", // needs update
     "shortcut_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_5126cb2068bd43d1ab4e17660ac48255.ico",
     "apple_touch_icon" => "http://media.cmgdigital.com/shared/theme-assets/242014/www.statesman.com_fa2d2d6e73614535b997734c7e7d2287.png",
-    "url" => "http://projects.statesman.com/ssma/",
+    "url" => "http://projects.statesman.com/news/sxsw-temporary-permits/",
     "twitter" => "statesman"
   );
 ?>
@@ -77,9 +77,10 @@
   <article class="container">
     <div class="row">
       <div class="col-xs-12 header">
-        <h1>Title</h1>
-        <p class="author">By Christian McDonald and Andrew Chavez</p>
-        <p>text</p>
+        <h1>Comparing two years of SXSW side-party permits</h1>
+        <p class="author">By Christian McDonald, Andrew Chavez and Lilly Rockwell</p>
+        <p>The City of Austin has studied the proliferation of South by Southwest side parties as part of a bigger examination of SXSW safety after the tragic car crash during last year’s SXSW festival that killed four people. And, seperately, a study by SXSW suggested re-evaluating how many pop-up events were allowed during the week of the festival.</p>
+        <p>The below map uses city data to compare the number of permits for South by Southwest week events in 2014 and 2015.</p>
       </div>
 
       <div class="col-md-9 col-sm-8 col-xs-12">
@@ -88,13 +89,16 @@
 
       <div class="col-md-3 col-sm-4 col-xs-12">
         <div id="year-toggle" class="list-group">
+          <div class="list-group-item active">
+            <h4 class="list-group-item-heading"><i class="fa fa-filter"></i> Filter by year</h4>
+          </div>
           <a href="#" class="list-group-item selected year-2015" data-year="2015">
-            <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2015 <i class="status-icon pull-right"></i></h4>
-            <p class="list-group-item-text">Describe the nuance of 2015 data here.</p>
+            <h4 class="list-group-item-heading"><i class="fa fa-square"></i> 2015 <i class="status-icon pull-right"></i></h4>
+            <p class="list-group-item-text">Includes South by Southwest events that have been tentatively approved or are under review by the City of Austin.</p>
           </a>
           <a href="#" class="list-group-item selected year-2014" data-year="2014">
             <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2014 <i class="status-icon pull-right"></i></h4>
-            <p class="list-group-item-text">And how the 2014 data differs here, maybe with a summary.</p>
+            <p class="list-group-item-text">Includes all events South by Southwest week that were approved by the city.</p>
           </a>
         </div>
       </div>
