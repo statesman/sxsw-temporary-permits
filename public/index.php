@@ -70,10 +70,10 @@
   <article class="container">
     <div class="row">
       <div class="col-xs-12 header">
-        <h1>Comparing two years of SXSW side-party permits</h1>
+        <h1>Comparing two years of SXSW event permits</h1>
         <p class="author">By Christian McDonald, Andrew Chavez and Lilly Rockwell</p>
-        <p>The City of Austin has studied the proliferation of South by Southwest side parties as part of a bigger examination of SXSW safety after the tragic car crash during last year’s SXSW festival that killed four people. And, seperately, a study by SXSW suggested re-evaluating how many pop-up events were allowed during the week of the festival.</p>
-        <p>The below map uses city data to compare the number of permits for South by Southwest week events in 2014 and 2015.</p>
+        <p>The city of Austin has studied the proliferation of South by Southwest side parties as part of a bigger examination of SXSW safety after the tragic car crash during last year’s festival that killed four people. And, separately, a study by SXSW suggested re-evaluating how many pop-up events were allowed during the week of the festival.</p>
+        <p>The below map uses city data to compare the number of temporary permits for South by Southwest week events in 2014 and 2015.</p>
       </div>
 
       <div class="col-md-9 col-sm-8 col-xs-12">
@@ -92,7 +92,7 @@
           </a>
           <a href="#" class="list-group-item selected year-2014" data-year="2014">
             <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2014 <i class="status-icon pull-right"></i></h4>
-            <p class="list-group-item-text">Includes all events South by Southwest week that were approved by the city.</p>
+            <p class="list-group-item-text">Includes all events during South by Southwest week that were approved by the city.</p>
           </a>
         </div>
       </div>
