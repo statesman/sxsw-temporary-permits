@@ -118,7 +118,7 @@ module.exports = function(grunt) {
           authKey: 'cmg'
         },
         src: 'public',
-        dest: '/stage_aas/projects/news/sxsw-temporary-permits/',
+        dest: '/prod_aas/projects/news/sxsw-temporary-permits/',
         exclusions: ['dist/tmp','Thumbs.db'],
         simple: false,
         useList: false
