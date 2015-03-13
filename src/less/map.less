@@ -1,30 +1,43 @@
+@2014-color: #23A925;
+@2015-color: rgb(43,131,186);
 
 #map {
-    height: 450px;
+    height: 550px;
 }
 
-#button {
-    position:absolute;
-    top:10px;
-    left:50px;
-    font-size:30px;
+.event-marker {
+  font-size: 25px;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+
+  .event-2014 {
+      color: @2014-color;
+  }
+  .event-2015 {
+      color: @2015-color;
+  }
 }
 
-.info {
-    position:absolute;
-    top:20px;
-    right:20px;
-    width:300px;
-    padding:10px;
-    background-color:#fff;
-    border:1px solid #ccc;
-    z-index:1000;
-}
+#year-toggle {
+  .year-2014 {
+    .fa-circle{
+      color: @2014-color;
+    }
+  }
+  .year-2015 {
+    .fa-circle {
+      color: @2015-color;
+    }
+  }
 
-.event-2014 {
-    color: red;
-}
-
-.event-2015 {
-    color: blue;
+  .list-group-item-heading {
+    i.status-icon:after {
+      .fa-icon();
+      content: @fa-var-square-o;
+    }
+  }
+  .selected {
+    .list-group-item-heading i.status-icon:after {
+      content: @fa-var-check-square-o;
+    }
+  }
 }

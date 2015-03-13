@@ -87,13 +87,13 @@
       </div>
 
       <div class="col-md-3 col-sm-4 col-xs-12">
-        <div class="list-group">
-          <a href="#" class="list-group-item active">
-            <h4 class="list-group-item-heading">2015 <i class="fa fa-check-square-o pull-right"></i></h4>
+        <div id="year-toggle" class="list-group">
+          <a href="#" class="list-group-item selected year-2015" data-year="2015">
+            <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2015 <i class="status-icon pull-right"></i></h4>
             <p class="list-group-item-text">Describe the nuance of 2015 data here.</p>
           </a>
-          <a href="#" class="list-group-item active">
-            <h4 class="list-group-item-heading">2014 <i class="fa fa-check-square-o pull-right"></i></h4>
+          <a href="#" class="list-group-item selected year-2014" data-year="2014">
+            <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2014 <i class="status-icon pull-right"></i></h4>
             <p class="list-group-item-text">And how the 2014 data differs here, maybe with a summary.</p>
           </a>
         </div>
