@@ -95,6 +95,7 @@
           <a href="#" class="list-group-item selected year-2015" data-year="2015">
             <h4 class="list-group-item-heading"><i class="fa fa-square"></i> 2015 <i class="status-icon pull-right"></i></h4>
             <p class="list-group-item-text">Includes South by Southwest events that have been tentatively approved or are under review by the City of Austin.</p>
+            <p class="list-group-item-text note"><i class="fa fa-asterisk"></i> <em>Indicates an event that is under review, as of March 13</em></p>
           </a>
           <a href="#" class="list-group-item selected year-2014" data-year="2014">
             <h4 class="list-group-item-heading"><i class="fa fa-circle"></i> 2014 <i class="status-icon pull-right"></i></h4>

@@ -11,22 +11,29 @@ var map = L.map('map', {
 
 map.addLayer(layer);
 
-var icons = {
-	2014: L.divIcon({
-		html: '<i class="fa fa-circle event-2014"></i>',
-		className: 'event-marker',
-		iconSize: L.point(12,12)
-	}),
-	2015: L.divIcon({
-		html: '<i class="fa fa-square event-2015"></i>',
-		className: 'event-marker',
-		iconSize: L.point(12,12)
-	})
-};
-
 var grouped = _.groupBy(mapdata, function(evt){
 	return evt.Year;
 });
+
+function makeIcon(evt) {
+  var icon;
+
+  if(evt.Year === 2014) {
+    icon = 'circle';
+  }
+  else if(evt.Year === 2015 && evt.Status === 'In Review') {
+    icon = 'asterisk';
+  }
+  else {
+    icon = 'square';
+  }
+
+  return new L.divIcon({
+		html: '<i class="fa fa-' + icon + ' event-' + evt.Year + '"></i>',
+		className: 'event-marker',
+		iconSize: L.point(12,12)
+	});
+}
 
 function popupContent(evt) {
   return '<p><strong>' + evt.EventVenueName + '</strong></p>' +
@@ -36,7 +43,7 @@ function popupContent(evt) {
 
 function makeMarker(evt){
 	var m = L.marker([evt.Latitude, evt.Longitude],{
-		icon: icons[evt.Year],
+		icon: makeIcon(evt),
     riseOnHover: true
 	});
   m.bindPopup(popupContent(evt));
