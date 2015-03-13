@@ -2,7 +2,11 @@
 @2015-color: rgb(43,131,186);
 
 #map {
-  height: 550px;
+  height: 300px;
+  @media (min-width: @screen-sm-min) {
+    height: 550px;
+  }
+  margin-bottom: @line-height-computed;
 
   .leaflet-popup-content {
     font-family: @font-family-sans-serif;

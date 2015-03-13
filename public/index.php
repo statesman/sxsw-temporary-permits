@@ -44,25 +44,18 @@
 
 
   <?php /* CMG advertising and analytics */ ?>
-  <!-- ?php include "includes/advertising.inc"; ? -->
-  <!-- ?php include "includes/metrics-head.inc"; ? -->
+  <?php include "includes/advertising.inc"; ?>
+  <?php include "includes/metrics-head.inc"; ?>
 
 </head>
 <body>
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-        <a class="navbar-brand" href="http://www.statesman.com/" target="_blank">
+      <a class="navbar-brand" href="http://www.statesman.com/" target="_blank">
         <img class="visible-xs visible-sm" width="103" height="26" src="assets/logo-short-black.png" />
         <img class="hidden-xs hidden-sm" width="273" height="26" src="assets/logo.png" />
-        </a>
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right social hidden-xs">
@@ -106,12 +99,10 @@
   </article>
 
   <!-- bottom matter -->
-  <!-- ?php include "includes/banner-ad.inc";? -->
+  <?php include "includes/banner-ad.inc";?>
   <?php include "includes/legal.inc";?>
-  <!-- ?php include "includes/project-metrics.inc"; ? -->
-  <!-- ?php include "includes/metrics.inc"; ? -->
-
-  <!-- ?php include "includes/metrics.inc"; ? -->
+  <?php include "includes/project-metrics.inc"; ?>
+  <?php include "includes/metrics.inc"; ?>
 
   <script src="dist/scripts.js"></script>
 
