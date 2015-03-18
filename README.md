@@ -1,4 +1,10 @@
-Single-page project
+# SXSW temporary permits
+
+Based from our single-page project template, this is a leaflet map using free and Open Streetmap tiles and font-awesome icons for markers.
+
+Built to support Lilly Rockwell's story: [Austin curbs temporary events during SXSW — but not as much as planned](http://www.mystatesman.com/news/news/local/austin-curbs-temporary-events-during-sxsw-but-not-/nkW68/#ca7f970c.257250.735675)
+
+## Single-page project
 ==============================
 
 Framework for a single page project, though it could be multiple pages. Just less complex than our immersive-template setup
