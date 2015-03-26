@@ -71,9 +71,10 @@
     <div class="row">
       <div class="col-xs-12 header">
         <h1>Comparing two years of SXSW event permits</h1>
+        <p>Published Saturday, March 14, 2015</p>
         <p class="author">By Christian McDonald, Andrew Chavez and Lilly Rockwell</p>
         <p>The city of Austin has studied the proliferation of South by Southwest side parties as part of a bigger examination of SXSW safety after the tragic car crash during last year’s festival that killed four people. And, separately, a study by SXSW suggested re-evaluating how many pop-up events were allowed during the week of the festival.</p>
-        <p>The below map uses city data to compare the number of temporary permits for South by Southwest week events in 2014 and 2015. Read more: <a href="http://www.mystatesman.com/news/news/local/austin-curbs-temporary-events-during-sxsw-but-not-/nkW68/" target="_blank">Austin curbs temporary events during SXSW — but not as much as planned</a></p>
+        <p>The below map uses city data to compare the number of temporary permits for South by Southwest week events in 2014 and 2015. Read more: <a href="http://www.mystatesman.com/news/news/local/austin-curbs-temporary-events-during-sxsw-but-not-/nkW68/#f0d9ca8e.257250.735683/" target="_blank">Austin curbs temporary events during SXSW — but not as much as planned</a></p>
       </div>
 
       <div class="col-md-9 col-sm-8 col-xs-12">

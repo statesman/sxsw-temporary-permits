@@ -4,6 +4,10 @@ Based from our single-page project template, this is a leaflet map using free an
 
 Built to support Lilly Rockwell's story: [Austin curbs temporary events during SXSW — but not as much as planned](http://www.mystatesman.com/news/news/local/austin-curbs-temporary-events-during-sxsw-but-not-/nkW68/#ca7f970c.257250.735675)
 
+## Mobile & Social
+
+Built on Twitter bootstrap for mobile, so everything resizes for phone. Standard sharing buttons, along with a custom share image of the map plots.
+
 ## Single-page project
 ==============================
 
