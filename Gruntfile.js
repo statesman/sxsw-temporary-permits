@@ -100,7 +100,7 @@ module.exports = function(grunt) {
     ftpush: {
       stage: {
         auth: {
-          host: 'host.coxmediagroup.com',
+          host: 'cmgdtcpxahost.cmg.int',
           port: 21,
           authKey: 'cmg'
         },
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
       // prod path will need to change
       prod: {
         auth: {
-          host: 'host.coxmediagroup.com',
+          host: 'cmgdtcpxahost.cmg.int',
           port: 21,
           authKey: 'cmg'
         },

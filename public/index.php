@@ -79,7 +79,7 @@
 
       <div class="col-md-9 col-sm-8 col-xs-12">
         <div id="map"></div>
-        <p class="small">Geo-coding services provided by <a href="https://geoservices.tamu.edu" style="
+        <p class="small">Geocoding services provided by <a href="https://geoservices.tamu.edu" style="
         text-decoration: underline;">Texas A&M University GeoServices</a></p>
       </div>
 
