@@ -108,6 +108,9 @@
   <?php include "includes/metrics.inc"; ?>
 
   <script src="dist/scripts.js"></script>
+  <script type="text/javascript">
+    var pymChild = new pym.Child();
+  </script>
 
   <?php if($_SERVER['SERVER_NAME'] === 'localhost'): ?>
     <script src="//localhost:35729/livereload.js"></script>
